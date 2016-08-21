@@ -1,3 +1,11 @@
+For Q2A
+=======
+
+Just copy this folder inside qa-plugin/wysiwyg-editor
+Move qa-question.js inside tobecopied folder to qa-content/ folder. This modification is for MathJax rendering on answer/question submit and also when show all comment button is pressed.
+If you are using caching for javascript files make sure to clear them for qa-question.js file. It is included in qa-include/pages/question.php. Just change the respective line to 
+$qa_content['script_rel'][]='qa-content/qa-question.js?1.7.4.1';
+
 CKEditor 4
 ==========
 
